@@ -1,3 +1,5 @@
+<img width="1200" height="400" alt="Run with Jazz Party (1200 x 400 px) (1)" src="https://github.com/user-attachments/assets/453cdeb0-7afe-47f1-8cf1-2c421b367e08" />
+
 # SISTEM PENDAFTARAN PESERTA FUN RUN (EMINA)
 
 Nama: Aliyah Azzah Sekedang
