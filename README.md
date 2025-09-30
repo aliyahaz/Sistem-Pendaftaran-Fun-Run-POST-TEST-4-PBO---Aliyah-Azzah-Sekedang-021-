@@ -86,8 +86,25 @@ Setelah selesai melakukan pendaftaran, peserta dapat langsung keluar dari progra
 
 Penerapan abstraction terdapat pada class Peserta, Paket, PesertaService, dan PaketService. Class tersebut dibuat untuk memisahkan data dengan logika program. Misalnya, Peserta hanya berisi data peserta, sedangkan PesertaService berfungsi mengatur proses penambahan, pencarian, atau pengelolaan peserta. Dengan cara ini, detail cara kerja di dalam class tidak perlu diketahui oleh pengguna program.
 
-<img width="1060" height="215" alt="image" src="https://github.com/user-attachments/assets/8e198707-b084-4872-a035-4dec56d71093" />
+- Penerapan abstraction pada class Peserta
 
+  <img width="742" height="263" alt="image" src="https://github.com/user-attachments/assets/03fe71fa-0461-40d1-b07c-0fed2808bdb2" />
+
+- Penerapan abstraction pada class PaketFunRun
+
+  <img width="809" height="746" alt="image" src="https://github.com/user-attachments/assets/7f2a93ef-e86c-4611-a15b-85c570dbed6a" />
+
+- Penerapan abstraction pada class PesertaService
+
+  <img width="1315" height="770" alt="image" src="https://github.com/user-attachments/assets/ff2ff7b8-a09f-4799-bacd-3016c448d64c" />
+
+- Penerapan abstraction pada class PaketService
+
+  <img width="1124" height="438" alt="image" src="https://github.com/user-attachments/assets/d621a0a1-d94a-4fb0-9209-11d0de45c102" />
+
+- Penerapan interface pada class Pembayaran
+
+  <img width="335" height="90" alt="image" src="https://github.com/user-attachments/assets/2fa78c02-624c-4364-bb30-2a035558ce37" />
 
 ## Penjelasan letak penerapan Polymorphism (Overloading & Overriding).
 
