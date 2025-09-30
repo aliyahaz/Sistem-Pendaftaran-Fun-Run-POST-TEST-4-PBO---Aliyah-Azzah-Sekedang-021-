@@ -82,33 +82,42 @@ Setelah selesai melakukan pendaftaran, peserta dapat langsung keluar dari progra
 
 <img width="556" height="75" alt="image" src="https://github.com/user-attachments/assets/b33234e4-fbe9-4c87-b334-028dd7f64b11" />
 
-## Penjelasan letak penerapan Abstraction (class/interface yang digunakan)
+## Penjelasan letak penerapan Abstraction 
 
-Penerapan abstraction terdapat pada class Peserta, Paket, PesertaService, dan PaketService. Class tersebut dibuat untuk memisahkan data dengan logika program. Misalnya, Peserta hanya berisi data peserta, sedangkan PesertaService berfungsi mengatur proses penambahan, pencarian, atau pengelolaan peserta. Dengan cara ini, detail cara kerja di dalam class tidak perlu diketahui oleh pengguna program.
+- Penerapan abstraction pada class Person
 
-- Penerapan abstraction pada class Peserta
+  <img width="649" height="413" alt="image" src="https://github.com/user-attachments/assets/c4b89f2c-1b45-4344-9e0b-e3379734eb16" />
 
-  <img width="742" height="263" alt="image" src="https://github.com/user-attachments/assets/03fe71fa-0461-40d1-b07c-0fed2808bdb2" />
-
-- Penerapan abstraction pada class PaketFunRun
-
-  <img width="809" height="746" alt="image" src="https://github.com/user-attachments/assets/7f2a93ef-e86c-4611-a15b-85c570dbed6a" />
-
-- Penerapan abstraction pada class PesertaService
-
-  <img width="1315" height="770" alt="image" src="https://github.com/user-attachments/assets/ff2ff7b8-a09f-4799-bacd-3016c448d64c" />
-
-- Penerapan abstraction pada class PaketService
-
-  <img width="1124" height="438" alt="image" src="https://github.com/user-attachments/assets/d621a0a1-d94a-4fb0-9209-11d0de45c102" />
+Class Person dibuat abstrak sehingga tidak dapat dibuat objek secara langsung. Method info() bersifat abstract sehingga wajib diisi ulang oleh subclass (Peserta dan Panitia).
 
 - Penerapan interface pada class Pembayaran
 
   <img width="335" height="90" alt="image" src="https://github.com/user-attachments/assets/2fa78c02-624c-4364-bb30-2a035558ce37" />
 
+Interface Pembayaran digunakan sebagai kontrak. Setiap class yang mengimplementasikan interface ini harus membuat isi dari method metodePembayaran().
+
+- Penerapan abstraction pada class Peserta (extends dan implements)
+  
+  <img width="1043" height="211" alt="image" src="https://github.com/user-attachments/assets/3f590ccc-ae2e-4a1c-9087-3824baa6f44d" />
+
+Class Peserta adalah contoh abstraksi karena mewarisi class Person dan juga mengimplementasikan interface Pembayaran.
+  
 ## Penjelasan letak penerapan Polymorphism (Overloading & Overriding).
 
-Penerapan polymorphism terdapat pada overriding digunakan jika ada class turunan dari Peserta, misalnya PesertaVIP, yang menimpa method toString() agar tampilan data peserta berbeda dengan class induknya.
+- Penerapan overloading pada class Peserta
 
-<img width="1079" height="195" alt="image" src="https://github.com/user-attachments/assets/934d4f61-cd8f-4593-8d7f-ac8870c53197" />
+  <img width="1069" height="394" alt="image" src="https://github.com/user-attachments/assets/09299012-22bc-46b3-be4a-0213bfc854c9" />
 
+Method info() dibuat dalam dua versi: tanpa parameter dan dengan parameter boolean. Ini disebut overloading, karena method bisa dipanggil dengan cara berbeda untuk menampilkan data lengkap atau lebih ringkas.
+
+- Penerapan overriding pada class Peserta
+
+  <img width="1068" height="183" alt="image" src="https://github.com/user-attachments/assets/71091f34-f74b-4de0-abdc-391e5f7c3995" />
+
+Method info() di class Peserta menimpa method info() dari class Person dengan isi yang berbeda.
+
+- Penerapan overriding pada class Panitia
+  
+  <img width="697" height="203" alt="image" src="https://github.com/user-attachments/assets/8ae26398-839c-4ef0-aedd-34801d8b789f" />
+
+Method info() di class Panitia juga menimpa method info() dari class Person, tetapi hasil tampilannya berbeda dengan Peserta.
